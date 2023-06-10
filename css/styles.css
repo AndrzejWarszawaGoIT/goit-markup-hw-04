@@ -62,18 +62,19 @@ a {
 }
 
 .link-kl {
+  text-align: center;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   color: #757575;
 }
 
-.link-kl:hover .envelope-icon,
-.link-kl:focus .envelope-icon,
-.link-kl:hover .smartphone-icon,
-.link-kl:focus .smartphone-icon {
-  fill: #2196f3;
-  stroke: #2196f3;
+.link-kl:hover,
+.envelope-icon,
+.smartphone-icon .link-kl:focus,
+.envelope-icon,
+.smartphone-icon {
+  color: #2196f3;
 }
 
 .link-nv:hover,
@@ -301,16 +302,16 @@ a {
   fill: #757575;
 }
 
-.background-icons-index {
-  background: #f5f4fa;
-  border-radius: 4px;
-  height: 120px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 30px;
-}
 .icon-antenna {
-  display: block;
-  margin: auto;
+  gap: 30px;
+}
+
+.icon-clock {
+  gap: 30px;
+}
+
+.icon-diagram {
+}
+
+.astronaut {
 }
