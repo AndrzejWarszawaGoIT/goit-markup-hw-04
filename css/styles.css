@@ -17,8 +17,8 @@ a {
   margin: 0 auto;
 }
 
-.border {
-  border-bottom: 1px black;
+.borders {
+  border-bottom: 1px solid #ececec;
 }
 
 .menu {
@@ -38,7 +38,6 @@ a {
 .kl {
   display: flex;
   justify-content: flex-end;
-  align-items: center;
   gap: 50px;
 }
 
@@ -66,15 +65,20 @@ a {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
+  letter-spacing: 0.02em;
   color: #757575;
 }
 
 .link-kl:hover,
-.envelope-icon,
-.smartphone-icon .link-kl:focus,
-.envelope-icon,
-.smartphone-icon {
+.link-kl:focus {
   color: #2196f3;
+}
+
+.link-kl:hover .envelope-icon,
+.link-kl:focus .envelope-icon,
+.link-kl:hover .smartphone-icon,
+.link-kl:focus .smartphone-icon {
+  fill: #2196f3;
 }
 
 .link-nv:hover,
@@ -89,6 +93,11 @@ a {
   text-align: center;
   background: #2f303a;
   padding: 200px 452px 200px 452px;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/header-index.jpg");
 }
 
 .title-logo {
@@ -126,6 +135,7 @@ a {
 .lorem-one {
   display: flex;
   padding-bottom: 94px;
+  gap: 30px;
 }
 
 .lorem-ipsum {
@@ -263,6 +273,7 @@ a {
   margin-bottom: 94px;
   margin-top: 15px;
 }
+
 .fotoblock {
   display: block;
   max-width: 100%;
@@ -302,16 +313,119 @@ a {
   fill: #757575;
 }
 
-.icon-antenna {
+.background-icons-index {
+  background: #f5f4fa;
+  border-radius: 4px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.icons-team-index {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  padding: 0;
+  margin-bottom: 30px;
+}
+.team-icons-four {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+
+.icon-color {
+  fill: #afb1b8;
+  margin: 27.27%;
+}
+
+.team-icons-four:hover,
+.team-icons-four:focus {
+  stroke: #ffffff;
+  cursor: pointer;
+  background-color: #2196f3;
+  fill: #ffffff;
+  stroke: #ffffff;
+}
+
+.team-icons-four:hover .icon-color {
+  fill: #ffffff;
+}
+
+.customers-index {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+
+.customers {
+  margin-top: 94px;
+  margin-bottom: 94px;
+}
+
+.icons-customers {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   gap: 30px;
+  margin: 0;
 }
 
-.icon-clock {
-  gap: 30px;
+.client-logo-index {
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  padding: 15px 31px;
+}
+.client-logo-index:hover {
+  border: 1px solid #2196f3;
+  cursor: pointer;
+  color: #2196f3;
 }
 
-.icon-diagram {
+.client-logo-index:hover .icons-logo {
+  fill: #2196f3;
 }
 
-.astronaut {
+.socjal-title {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+}
+
+.socjal {
+  height: 80px;
+  width: 206px;
+  margin-top: -135px;
+  margin-left: 531px;
+}
+
+.icon-instagram-socjal,
+.icon-twitter-footer,
+.icon-facebook-footer,
+.icon-linkedin-footer {
+  fill: #ffffff;
+  margin: 12px;
+  stroke: #ffffff;
+}
+
+.icons-group-footer {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 20px;
+  padding: 0;
+}
+
+.icons-list-footer {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.icons-list-footer:hover {
+  background-color: #2196f3;
 }
